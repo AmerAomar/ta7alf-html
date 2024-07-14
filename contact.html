@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Learning Hub</title>
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/TalentHubLogoCropped.png" alt="The Learning Hub Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="login.html"><i class="fas fa-sign-in-alt"></i> Login/Register</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1><i class="fas fa-envelope"></i> Contact Us</h1>
+        <p>Feel free to reach out to us through the form below:</p>
+        <form action="submit_form.php" method="POST" enctype="multipart/form-data" style="border: 2px solid #ccc; padding: 20px;">
+            <label for="firstName"><i class="fas fa-user"></i> First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName"><i class="fas fa-user"></i> Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="phone"><i class="fas fa-phone"></i> Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="bachelorCertificate"><i class="fas fa-file"></i> Bachelor’s Certificate:</label>
+            <input type="file" id="bachelorCertificate" name="bachelorCertificate" required>
+            
+            <label for="startDate"><i class="fas fa-calendar-alt"></i> Start Date:</label>
+            <input type="date" id="startDate" name="startDate" required>
+            
+            <label for="graduationDate"><i class="fas fa-calendar-alt"></i> Graduation Date:</label>
+            <input type="date" id="graduationDate" name="graduationDate" required>
+            
+            <label for="personalPhoto"><i class="fas fa-image"></i> Personal Photo:</label>
+            <input type="file" id="personalPhoto" name="personalPhoto" required>
+            
+            <label for="cv"><i class="fas fa-file-alt"></i> CV:</label>
+            <input type="file" id="cv" name="cv" required>
+            
+            <label for="otherFiles"><i class="fas fa-file-upload"></i> Other Files:</label>
+            <input type="file" id="otherFiles" name="otherFiles">
+            
+            <label>
+                <input type="checkbox" name="agreeTerms" required>
+                <i class="fas fa-check-square"></i> Agree to terms and conditions
+            </label>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        <p>Contact us at: info@learninghub.com | © 2024 The Learning Hub. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/amer-al-omari/" target="_blank" style="color: white;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/AmerAomar" target="_blank" style="color: white;"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </footer>
+    
+    <script src="js/contact.js"></script>
+</body>
+</html>
