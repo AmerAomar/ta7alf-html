@@ -71,18 +71,70 @@ h1 {
     animation: fadeInUp 2s;
 }
 
-.gallery .slides {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    animation: slideIn 3s infinite;
-}
-
-.gallery img {
-    height: 400px;
+.gallery .slider {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.gallery .slides {
+    display: flex;
+    width: 200%; 
+    animation: slide 10s linear infinite; 
+}
+
+.gallery .slide {
+    width: 50%;
+    flex-shrink: 0;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    10% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-50%);
+    }
+    30% {
+        transform: translateX(-50%);
+    }
+    40% {
+        transform: translateX(-50%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    60% {
+        transform: translateX(-50%);
+    }
+    70% {
+        transform: translateX(-0%);
+    }
+    80% {
+        transform: translateX(0);
+    }
+    90% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+
 
 .toc {
     margin: 20px 0;
